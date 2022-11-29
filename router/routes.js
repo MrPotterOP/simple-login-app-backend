@@ -15,6 +15,7 @@ const router = express.Router();
 router.post("/register", postRegister);
 router.post("/login", postLogin);
 router.get("/homepage", checkToken, getHomePage);
+router.test("/test", (req, res)=>{res.json({msg: "Server Running."})});
 
 
 export default router;
