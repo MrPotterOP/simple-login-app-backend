@@ -21,6 +21,6 @@ mongoose.connect(process.env.MONGOURL, {useUnifiedTopology: true, useNewUrlParse
 });
 
 //Backend Server
-App.listen(4000, ()=>{
+App.listen(process.env.PORT || 4000, ()=>{
     console.log("Backend Sever Running on 4000");
 });
